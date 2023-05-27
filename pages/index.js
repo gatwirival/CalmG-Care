@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../pages/components/Header'
 import SelfCareList from '../pages/components/SelfCareList';
+import EncouragingQuotes from './components/EncouragingQuotes';
 
 function Home() {
   const selfCareItems = [
@@ -15,6 +16,7 @@ function Home() {
     <>
         <Header />
         <SelfCareList selfCareItems={selfCareItems} />
+        <EncouragingQuotes />
     </>
   );
 }
