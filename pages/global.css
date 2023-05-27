@@ -1,0 +1,66 @@
+  body {
+    color: rgb(var(--foreground-rgb));
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        rgb(var(--background-end-rgb))
+      )
+      rgb(var(--background-start-rgb));
+  }
+
+  .container {
+    text-align: center;
+  }
+
+  .title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  button {
+    background-color: #1abc9c;
+    color: #fff;
+    border: 1px solid #fff;
+    margin: 10px;
+    font-size: 16px;
+    font-family: sans-serif;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    width: 120px;
+    height: 50px;
+  }
+  .horizontal-header {
+    display: flex; /* Enables horizontal layout */
+    align-items: center; /* Centers items vertically */
+  }
+
+  /* Additional styles for the header */
+  header {
+      background-color: #1abc9c;
+      color: white;
+      font-size: 30px;
+      padding: 20px;
+      text-align: center;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    margin-right: 15px;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: #333;
+  }
