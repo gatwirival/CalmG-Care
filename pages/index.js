@@ -1,7 +1,9 @@
 import React from 'react';
+import Link from 'next/link';
 import Header from '../pages/components/Header'
 import SelfCareList from '../pages/components/SelfCareList';
 import EncouragingQuotes from './components/EncouragingQuotes';
+import CalmSounds from './components/Calmsounds';
 
 function Home() {
   const selfCareItems = [
@@ -15,8 +17,9 @@ function Home() {
   return (
     <>
         <Header />
-        <SelfCareList selfCareItems={selfCareItems} />
         <EncouragingQuotes />
+        <SelfCareList selfCareItems={selfCareItems} />
+        <CalmSounds />
     </>
   );
 }

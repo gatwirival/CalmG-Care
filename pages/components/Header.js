@@ -16,6 +16,11 @@ const Header = () => {
             </Link>
           </li>
           <li>
+            <Link href="/Sounds" legacyBehavior>
+              CalmSounds
+            </Link>
+          </li>
+          <li>
             <Link href="/Register" legacyBehavior>
               Register
             </Link>
