@@ -1,37 +1,71 @@
-import { useState } from 'react';
-import appwrite from '../appwrite'; // Path to appwrite.js file
+import { useState } from "react";
+import { register } from "../appwrite";
+import Link from "next/link";
+import Header from "./components/Header";
 
-const Register = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+export default function SignUp() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
-  const handleRegister = async () => {
-    try {
-      await appwrite.account.create(email, password);
-      console.log('User registered successfully!');
-    } catch (error) {
-      console.error('Failed to register:', error);
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    if (!email) {
+      alert("Email is required.");
+      return;
     }
+
+    if (!password) {
+      alert("Password is required.");
+      return;
+    }
+
+    if (password.length < 8) {
+      alert("Password must be at least 8 characters long.");
+      return;
+    }
+
+    register(email, password)
+      .then((account) => {
+        alert(`Successfully created account with ID: ${account.$id}`);
+      })
+      .catch((error) => {
+        console.error(error);
+        alert("A user with the same email exists.");
+      });
   };
 
   return (
-    <div>
-      <h1>Register</h1>
-      <input
-        type="email"
-        placeholder="Email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      />
-      <input
-        type="password"
-        placeholder="Password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-      />
-      <button onClick={handleRegister}>Register</button>
-    </div>
-  );
-};
+    <>
+ <Header />
+    <form className="form" onSubmit={handleSubmit}>
+      <div className="form-group">
+        <label htmlFor="email">Email</label>
+        <input
+          id="email"
+          type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+      </div>
 
-export default Register;
+      <div className="form-group">
+        <label htmlFor="password">Password</label>
+        <input
+          id="password"
+          type="password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
+      </div>
+
+      <button type="submit" className="submit-btn">
+        Sign up
+      </button>
+
+      <Link href="/Login">
+        Login
+      </Link>
+    </form>
+    </>
+  );
+}

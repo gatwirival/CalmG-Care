@@ -1,37 +1,68 @@
-import { useState } from 'react';
-import appwrite from '../appwrite'; // Path to appwrite.js file
+import { useState } from "react";
+import { useRouter } from "next/router";
+import { login } from "../appwrite";
+import Link from "next/link";
+import Header from "./components/Header";
 
-const Login = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+export default function LogIn() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const router = useRouter();
 
-  const handleLogin = async () => {
-    try {
-      await appwrite.account.createSession(email, password);
-      console.log('User logged in successfully!');
-    } catch (error) {
-      console.error('Failed to login:', error);
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    if (!email) {
+      alert("Email is required.");
+      return;
     }
+
+    if (!password) {
+      alert("Password is required.");
+      return;
+    }
+
+    login(email, password)
+      .then((account) => {
+        alert(`Successfully logged in from: ${account.osName}`);
+        router.push("/");
+      })
+      .catch((error) => {
+        console.error(error);
+        alert("Login failed. Please try again.");
+      });
   };
 
   return (
-    <div>
-      <h1>Login</h1>
-      <input
-        type="email"
-        placeholder="Email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      />
-      <input
-        type="password"
-        placeholder="Password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-      />
-      <button onClick={handleLogin}>Login</button>
-    </div>
-  );
-};
+    <>
+     <Header />
+    <form className="form" onSubmit={handleSubmit}>
+      <div className="form-group">
+        <label htmlFor="email">Email</label>
+        <input
+          id="email"
+          type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+      </div>
 
-export default Login;
+      <div className="form-group">
+        <label htmlFor="password">Password</label>
+        <input
+          id="password"
+          type="password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
+      </div>
+
+      <button type="submit" className="submit-btn">
+        Log In
+      </button>
+      <Link href="/Register">
+        Register
+      </Link>
+    </form>
+    </>
+  );
+}
