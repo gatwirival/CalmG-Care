@@ -30,6 +30,11 @@ const Header = () => {
               Login
             </Link>
           </li>
+          <li>
+            <Link href="/Logout" legacyBehavior>
+              Logout
+            </Link>
+          </li>
         </ul>
       </nav>
     </header>
