@@ -56,3 +56,9 @@ While the development server is running, any changes you make to your code will 
 You can stop the local server at any time by pressing Ctrl + C in the terminal or command prompt.
 
 That's it! You should now be able to run your Next.js app locally and start developing.
+## Homepage
+![Screenshot from 2023-05-31 20-15-11](https://github.com/gatwirival/CalmG-Care/assets/61587290/d51ce41c-d69c-44a4-b8bd-7a0b05419229)
+
+
+ file:///home/gatwiri/Pictures/Screenshots/Screenshot%20from%202023-05-31%2020-21-35.png
+
