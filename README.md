@@ -61,6 +61,10 @@ That's it! You should now be able to run your Next.js app locally and start deve
 
 ![Screenshot from 2023-05-31 20-21-35](https://github.com/gatwirival/CalmG-Care/assets/61587290/7cadcc3b-a434-4d98-b7eb-41b23fcb84bc)
 
-## Login
+## Register
 ![Screenshot from 2023-05-31 20-15-23](https://github.com/gatwirival/CalmG-Care/assets/61587290/50eab0a7-b930-4449-a1c5-22648b85a752)
+## Login
+![Screenshot from 2023-05-31 20-15-32](https://github.com/gatwirival/CalmG-Care/assets/61587290/7433a350-8e6c-40cb-9b3a-e440861ee0db)
+
+
 
