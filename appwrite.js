@@ -45,4 +45,3 @@ export const register = async (email, password) => {
 };
 
 export default client;
-

@@ -26,31 +26,49 @@ const GratitudePage = () => {
     setGratitude('');
   };
 
+  const handleDeleteAffirmation = (index) => {
+    const updatedAffirmations = [...affirmationsList];
+    updatedAffirmations.splice(index, 1);
+    setAffirmationsList(updatedAffirmations);
+  };
+
+  const handleDeleteGratitude = (index) => {
+    const updatedGratitudes = [...gratitudesList];
+    updatedGratitudes.splice(index, 1);
+    setGratitudesList(updatedGratitudes);
+  };
+
   return (
     <>
-    <Header/>
-    <div>
-      <h1>Affirmations</h1>
-      <input type="text" value={affirmation} onChange={handleAffirmationChange} />
-      <button onClick={handleAddAffirmation}>Add Affirmation</button>
+      <Header />
+      <div>
+        <h1>Affirmations</h1>
+        <input type="text" value={affirmation} onChange={handleAffirmationChange} />
+        <button onClick={handleAddAffirmation}>Add Affirmation</button>
 
-      <ul>
-        {affirmationsList.map((item, index) => (
-          <li key={index}>{item}</li>
-        ))}
-      </ul>
+        <ul>
+          {affirmationsList.map((item, index) => (
+            <li key={index}>
+              {item}
+              <button onClick={() => handleDeleteAffirmation(index)}>Delete</button>
+            </li>
+          ))}
+        </ul>
 
-      <h1>Gratitudes</h1>
-      <input type="text" value={gratitude} onChange={handleGratitudeChange} />
-      <button onClick={handleAddGratitude}>Add Gratitude</button>
+        <h1>Gratitudes</h1>
+        <input type="text" value={gratitude} onChange={handleGratitudeChange} />
+        <button onClick={handleAddGratitude}>Add Gratitude</button>
 
-      <ul>
-        {gratitudesList.map((item, index) => (
-          <li key={index}>{item}</li>
-        ))}
-      </ul>
-    </div>
-    <Footer/>
+        <ul>
+          {gratitudesList.map((item, index) => (
+            <li key={index}>
+              {item}
+              <button onClick={() => handleDeleteGratitude(index)}>Delete</button>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <Footer />
     </>
   );
 };
