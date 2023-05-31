@@ -32,3 +32,24 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Running our app locally
+Install the dependencies by running the following command:
+```
+npm install
+```
+This will install all the required packages specified in the package.json file.
+
+Once the installation is complete, start the local development server with the following command:
+
+```
+npm run dev
+```
+This command will start the Next.js development server and watch for any changes in your code.
+
+By default, the Next.js app will be available at http://localhost:3000 in your web browser. Open a browser window and visit that URL to see your app running locally.
+While the development server is running, any changes you make to your code will automatically trigger a rebuild, and the browser will be refreshed to reflect the latest changes.
+
+You can stop the local server at any time by pressing Ctrl + C in the terminal or command prompt.
+
+That's it! You should now be able to run your Next.js app locally and start developing.
