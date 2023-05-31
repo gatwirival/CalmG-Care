@@ -2,6 +2,7 @@ import { useState } from "react";
 import { register } from "../appwrite";
 import Link from "next/link";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 export default function SignUp() {
   const [email, setEmail] = useState("");
@@ -66,6 +67,7 @@ export default function SignUp() {
         Login
       </Link>
     </form>
+    <Footer/>
     </>
   );
 }

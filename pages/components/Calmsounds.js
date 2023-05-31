@@ -28,7 +28,8 @@ const CalmSounds = () => {
   };
 
   return (
-    <div style={{ position: 'fixed', top: '15%', right: '2%' }}>
+    <div className="calm-sounds">
+      <h2 className="component-title">Calm Sounds</h2>
       <div className="sounds-container">
         {sounds.map((sound) => (
           <div

@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import { login } from "../appwrite";
 import Link from "next/link";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 export default function LogIn() {
   const [email, setEmail] = useState("");
@@ -63,6 +64,7 @@ export default function LogIn() {
         Register
       </Link>
     </form>
+    <Footer/>
     </>
   );
 }

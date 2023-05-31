@@ -1,6 +1,7 @@
 // Header.js
 
 import Link from 'next/link';
+import Logout from './Logout';
 
 const Header = () => {
   return (
@@ -21,6 +22,11 @@ const Header = () => {
             </Link>
           </li>
           <li>
+            <Link href="/Gratitude" legacyBehavior>
+              Gratitude
+            </Link>
+          </li>
+          <li>
             <Link href="/Register" legacyBehavior>
               Register
             </Link>
@@ -30,11 +36,7 @@ const Header = () => {
               Login
             </Link>
           </li>
-          <li>
-            <Link href="/Logout" legacyBehavior>
-              Logout
-            </Link>
-          </li>
+          <Logout/>
         </ul>
       </nav>
     </header>
