@@ -14,7 +14,7 @@ function Logout() {
           router.push('/Login');
         }
       });
-  }, [router]); // Add router as a dependency
+  }, []);
 
   const handleLogOut = () => {
     logout()
@@ -23,7 +23,8 @@ function Logout() {
   };
 
   if (!user && router.pathname !== "/Register" && router.pathname !== "/") {
-    return <p>You aren't logged in.</p>;
+    return <p>You aren&apos;t logged in.</p>
+
   }
 
   return (

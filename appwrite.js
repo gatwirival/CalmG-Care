@@ -2,7 +2,7 @@ import { Account, AppwriteException, Client } from "appwrite";
 
 const client = new Client()
 .setEndpoint('https://cloud.appwrite.io/v1')
-.setProject('64709871a7fc1a6b44d8')
+.setProject('6470adba5edad9ee7d1c')
 
 export const getUserData = async () => {
   try {
