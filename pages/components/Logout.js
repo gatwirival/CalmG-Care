@@ -14,7 +14,7 @@ function Logout() {
           router.push('/Login');
         }
       });
-  }, []);
+  }, [router]); // Add router as a dependency
 
   const handleLogOut = () => {
     logout()
