@@ -18,10 +18,12 @@ const EncouragingQuotes = () => {
   };
 
   return (
-    <div>
-      <h2>Encouraging Quote of the Day:</h2>
-      <blockquote>{quote}</blockquote>
-      <button onClick={fetchRandomQuote}>Get Another Quote</button>
+    <div style={{ display: 'flex', justifyContent: 'center' }}>
+      <div style={{ textAlign: 'center' }}>
+        <h2>Encouraging Quote of the Day:</h2>
+        <blockquote>{quote}</blockquote>
+        <button onClick={fetchRandomQuote}>Get Another Quote</button>
+      </div>
     </div>
   );
 };

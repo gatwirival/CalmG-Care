@@ -64,11 +64,8 @@ function SelfCareList({ selfCareItems }) {
   };
 
   return (
-    <div>
-      <h3>Self-Care Activities</h3>
-      <button onClick={toggleAllCompletion}>
-        {completedItems.length === items.length ? 'Mark All Incomplete' : 'Mark All Completed'}
-      </button>
+    <div style={{ justifyContent: 'center',textAlign: 'center' }}>
+      <h3>Self-Care Activities:</h3>
       <ul>
         {items.map((item) => (
           <li
@@ -83,6 +80,11 @@ function SelfCareList({ selfCareItems }) {
             </span>
           </li>
         ))}
+      </ul>
+      <ul>
+      <button onClick={toggleAllCompletion}>
+        {completedItems.length === items.length ? 'Mark All Incomplete' : 'Mark All Completed'}
+      </button>
       </ul>
       <div>
         <button onClick={handleDeleteSelected} disabled={selectedItems.length === 0}>

@@ -27,6 +27,32 @@ body {
     cursor: pointer;
     border: 2px solid #ccc;
   }
+ ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding: 20px;
+    font-size: medium;
+
+   }
+   h2{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding: 20px;
+    font-size: large;
+    color: #007bff;
+    font-weight: bold;
+   }
+   h3{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding: 20px;
+    font-size: large;
+    color: #007bff;
+    font-weight: bold;
+   }
 /*HeADER*/
   ul.horizontal-header {
     display: flex;
@@ -149,18 +175,6 @@ body {
     }
 
     h3 {
-      left: 0;
-    }
-
-    ul {
-      left: 0;
-    }
-
-    li {
-      left: 0;
-    }
-
-    a {
       left: 0;
     }
 
