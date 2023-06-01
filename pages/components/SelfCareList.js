@@ -1,15 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 function SelfCareList({ selfCareItems }) {
   const [completedItems, setCompletedItems] = useState([]);
   const [newItemTitle, setNewItemTitle] = useState('');
   const [newItemCategory, setNewItemCategory] = useState('');
-  const [items, setItems] = useState(selfCareItems);
-  const [selectedItems, setSelectedItems] = useState([]);
+  const [items, setItems] = useState([]);
+  const [selectedItems, setSelectedItems] = useState([]); // Add selectedItems state
 
-  const toggleItemCompletion = itemId => {
+  useEffect(() => {
+    setItems(selfCareItems);
+  }, [selfCareItems]);
+
+  const toggleItemCompletion = (itemId) => {
     if (completedItems.includes(itemId)) {
-      setCompletedItems(completedItems.filter(id => id !== itemId));
+      setCompletedItems(completedItems.filter((id) => id !== itemId));
     } else {
       setCompletedItems([...completedItems, itemId]);
     }
@@ -19,16 +23,16 @@ function SelfCareList({ selfCareItems }) {
     if (completedItems.length === items.length) {
       setCompletedItems([]);
     } else {
-      const allItemIds = items.map(item => item.id);
+      const allItemIds = items.map((item) => item.id);
       setCompletedItems(allItemIds);
     }
   };
 
-  const handleNewItemTitleChange = event => {
+  const handleNewItemTitleChange = (event) => {
     setNewItemTitle(event.target.value);
   };
 
-  const handleNewItemCategoryChange = event => {
+  const handleNewItemCategoryChange = (event) => {
     setNewItemCategory(event.target.value);
   };
 
@@ -36,7 +40,7 @@ function SelfCareList({ selfCareItems }) {
     const newItem = {
       id: Date.now(),
       title: newItemTitle,
-      category: newItemCategory
+      category: newItemCategory,
     };
 
     setItems([...items, newItem]);
@@ -44,16 +48,16 @@ function SelfCareList({ selfCareItems }) {
     setNewItemCategory('');
   };
 
-  const handleToggleSelected = itemId => {
+  const handleToggleSelected = (itemId) => {
     if (selectedItems.includes(itemId)) {
-      setSelectedItems(selectedItems.filter(id => id !== itemId));
+      setSelectedItems(selectedItems.filter((id) => id !== itemId));
     } else {
       setSelectedItems([...selectedItems, itemId]);
     }
   };
 
   const handleDeleteSelected = () => {
-    const updatedItems = items.filter(item => !selectedItems.includes(item.id));
+    const updatedItems = items.filter((item) => !selectedItems.includes(item.id));
     setItems(updatedItems);
     setCompletedItems([]);
     setSelectedItems([]);
@@ -66,18 +70,15 @@ function SelfCareList({ selfCareItems }) {
         {completedItems.length === items.length ? 'Mark All Incomplete' : 'Mark All Completed'}
       </button>
       <ul>
-        {items.map(item => (
+        {items.map((item) => (
           <li
             key={item.id}
             onClick={() => toggleItemCompletion(item.id)}
             style={{
-              textDecoration: completedItems.includes(item.id) ? 'line-through' : 'none'
+              textDecoration: completedItems.includes(item.id) ? 'line-through' : 'none',
             }}
           >
-            <span
-              onClick={() => handleToggleSelected(item.id)}
-              style={{ cursor: 'pointer' }}
-            >
+            <span onClick={() => handleToggleSelected(item.id)} style={{ cursor: 'pointer' }}>
               {item.title} - {item.category}
             </span>
           </li>
