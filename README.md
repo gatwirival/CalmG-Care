@@ -1,3 +1,5 @@
+# Appwrite and Next.js Demo App (Appwrite Hackathon 2023)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -56,14 +58,13 @@ While the development server is running, any changes you make to your code will 
 You can stop the local server at any time by pressing Ctrl + C in the terminal or command prompt.
 
 That's it! You should now be able to run your Next.js app locally and start developing.
-## Homepage
-![Screenshot from 2023-05-31 20-15-11](https://github.com/gatwirival/CalmG-Care/assets/61587290/d51ce41c-d69c-44a4-b8bd-7a0b05419229)
+## Screenshots
 
 ![Screenshot from 2023-05-31 20-21-35](https://github.com/gatwirival/CalmG-Care/assets/61587290/7cadcc3b-a434-4d98-b7eb-41b23fcb84bc)
 
-## Register
+### Register
 ![Screenshot from 2023-05-31 20-15-23](https://github.com/gatwirival/CalmG-Care/assets/61587290/50eab0a7-b930-4449-a1c5-22648b85a752)
-## Login
+### Login
 ![Screenshot from 2023-05-31 20-15-32](https://github.com/gatwirival/CalmG-Care/assets/61587290/7433a350-8e6c-40cb-9b3a-e440861ee0db)
 
 
