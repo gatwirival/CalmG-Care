@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Header from './components/Header'
+import Footer from './components/Footer'
 
 const CalmSounds = () => {
   const [sounds, setSounds] = useState([
@@ -38,6 +40,7 @@ const CalmSounds = () => {
 
   return (
     <div>
+        <Header/>
       {sounds.map((sound) => (
         <div
           key={sound.id}
@@ -49,6 +52,7 @@ const CalmSounds = () => {
         </div>
       ))}
       <button onClick={handleStopSound}>Stop All Sounds</button>
+      <Footer/>
     </div>
   );
 };
