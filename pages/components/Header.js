@@ -1,13 +1,21 @@
-// Header.js
-
 import Link from 'next/link';
+import { useState } from 'react';
 import Logout from './Logout';
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <header>
       <nav>
-        <ul className="horizontal-header">
+        <div className="mobile-menu-toggle" onClick={toggleMenu}>
+          <span className={`menu-icon ${isMenuOpen ? 'open' : ''}`}></span>
+        </div>
+        <ul className={`horizontal-header ${isMenuOpen ? 'open' : ''}`}>
           <li>
             <h1>G-Care</h1>
           </li>
@@ -21,7 +29,7 @@ const Header = () => {
               CalmSounds
             </Link>
           </li>
-            <li>
+          <li>
             <Link href="/Register" legacyBehavior>
               Register
             </Link>
@@ -31,7 +39,7 @@ const Header = () => {
               Login
             </Link>
           </li>
-          <Logout/>
+          <Logout />
         </ul>
       </nav>
     </header>
