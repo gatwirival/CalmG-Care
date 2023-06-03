@@ -19,14 +19,6 @@ const CalmSounds = () => {
     setSounds(updatedSounds);
   };
 
-  const handleStopSound = () => {
-    const updatedSounds = sounds.map((sound) => ({
-      ...sound,
-      playing: false,
-    }));
-    setSounds(updatedSounds);
-  };
-
   return (
     <div className="calm-sounds">
       <h2 className="component-title">Calm Sounds</h2>
@@ -48,7 +40,6 @@ const CalmSounds = () => {
         ))}
       </div>
       <div className="buttons-container">
-        <button onClick={handleStopSound}>Stop All Sounds</button>
         <Link href="/Sounds">
           <button>Explore More</button>
         </Link>
