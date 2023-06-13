@@ -77,7 +77,7 @@ That's it! You should now be able to run your Next.js app locally and start deve
 - [ ] Physical Activity Tracking: Integrate fitness tracking features that allow users to record their exercise activities, set goals, and track their progress. Provide workout plans and exercises suitable for different fitness levels.
 - [ ] Sleep Tracker: Include a sleep tracking feature that monitors users' sleep patterns, provides insights on sleep quality, and offers tips for better sleep hygiene.
 - [ ] Nutrition and Meal Planning: Offer a database of healthy recipes, meal planning tools, and nutrition information to help users make informed choices and maintain a balanced diet.
-- [ ] Affirmations and Gratitude: Include a section where users can access affirmations, positive quotes, and gratitude exercises to cultivate a positive mindset.
+- [ ] Affirmations and Gratitude: Include a section where users can access affirmations, and gratitude exercises to cultivate a positive mindset.
 - [ ] Community Support: Incorporate a social aspect where users can connect with like-minded individuals, join groups, participate in challenges, and share their progress and experiences.
 - [ ] Mood Tracker: Enable users to track and analyze their moods over time. Provide visualizations and insights to help users identify patterns and make adjustments to their self-care routines accordingly.
 - [ ] Resources and Articles: Include a curated collection of articles, blogs, and resources related to self-care, mental health, wellness, and personal development.
