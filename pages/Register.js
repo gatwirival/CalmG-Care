@@ -31,7 +31,7 @@ export default function SignUp() {
       })
       .catch((error) => {
         console.error(error);
-        alert("A user with the same email exists.");
+        alert("Registration failed. Please try again..");
       });
   };
 
