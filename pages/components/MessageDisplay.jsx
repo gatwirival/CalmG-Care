@@ -21,3 +21,4 @@ export const ChatMessage = ({ who = "bot", message }) => {
     </div>
   );
 };
+export default ChatMessage
