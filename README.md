@@ -34,7 +34,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-## Tutorial 
+## Tutorial
 https://gatwirival.hashnode.dev/build-a-self-care-application-using-nextjs-and-appwrite
 # How to Contribute
 
@@ -72,11 +72,11 @@ That's it! You should now be able to run your Next.js app locally and start deve
 
 ## todo
 - [ ] User Profile: Allow users to create personalized profiles where they can store their preferences, goals, and track their progress.
--  [x] Add Chatbot
+- [x] Add Chatbot
 - [ ] Daily Planner: Provide a calendar or planner feature that allows users to schedule self-care activities, set reminders, and manage their daily routines.
 - [ ] Meditation and Mindfulness: Include a library of guided meditation sessions, breathing exercises, and mindfulness techniques to help users relax, reduce stress, and improve their mental well-being.
 - [ ] Journaling: Incorporate a digital journal where users can write down their thoughts, feelings, and experiences. Offer prompts and guided questions to encourage self-reflection.
-- [ ] Physical Activity Tracking: Integrate fitness tracking features that allow users to record their exercise activities, set goals, and track their progress. Provide workout plans and exercises suitable for different fitness levels.
+- [x] Physical Activity Tracking: Integrate fitness tracking features that allow users to record their exercise activities, set goals, and track their progress.
 - [ ] Sleep Tracker: Include a sleep tracking feature that monitors users' sleep patterns, provides insights on sleep quality, and offers tips for better sleep hygiene.
 - [ ] Nutrition and Meal Planning: Offer a database of healthy recipes, meal planning tools, and nutrition information to help users make informed choices and maintain a balanced diet.
 - [ ] Affirmations and Gratitude: Include a section where users can access affirmations, and gratitude exercises to cultivate a positive mindset.
