@@ -30,6 +30,11 @@ const Header = () => {
             </Link>
           </li>
           <li>
+            <Link href="/Chat" legacyBehavior>
+              Chatpal
+            </Link>
+            </li>
+          <li>
             <Link href="/Register" legacyBehavior>
               Register
             </Link>
