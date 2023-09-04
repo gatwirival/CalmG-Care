@@ -71,15 +71,7 @@ That's it! You should now be able to run your Next.js app locally and start deve
 ![Screenshot from 2023-05-31 20-15-32](https://github.com/gatwirival/CalmG-Care/assets/61587290/7433a350-8e6c-40cb-9b3a-e440861ee0db)
 
 ## todo
-- [ ] User Profile: Allow users to create personalized profiles where they can store their preferences, goals, and track their progress.
 - [x] Add Chatbot
-- [ ] Daily Planner: Provide a calendar or planner feature that allows users to schedule self-care activities, set reminders, and manage their daily routines.
 - [ ] Meditation and Mindfulness: Include a library of guided meditation sessions, breathing exercises, and mindfulness techniques to help users relax, reduce stress, and improve their mental well-being.
 - [ ] Journaling: Incorporate a digital journal where users can write down their thoughts, feelings, and experiences. Offer prompts and guided questions to encourage self-reflection.
 - [x] Physical Activity Tracking: Integrate fitness tracking features that allow users to record their exercise activities, set goals, and track their progress.
-- [ ] Sleep Tracker: Include a sleep tracking feature that monitors users' sleep patterns, provides insights on sleep quality, and offers tips for better sleep hygiene.
-- [ ] Nutrition and Meal Planning: Offer a database of healthy recipes, meal planning tools, and nutrition information to help users make informed choices and maintain a balanced diet.
-- [ ] Affirmations and Gratitude: Include a section where users can access affirmations, and gratitude exercises to cultivate a positive mindset.
-- [ ] Mood Tracker: Enable users to track and analyze their moods over time. Provide visualizations and insights to help users identify patterns and make adjustments to their self-care routines accordingly.
-- [ ] Resources and Articles: Include a curated collection of articles, blogs, and resources related to self-care, mental health, wellness, and personal development.
-- [ ] Customization Options: Give users the ability to personalize the app's theme, layout, and content to make their experience more enjoyable and tailored to their preferences.
